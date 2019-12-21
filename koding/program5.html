@@ -22,29 +22,29 @@
     </style>
     <script>
         function gangeTabell(container) {
-            var kolonne
-            var linje
-            var produkt
-            var side = ""
-            var even
+            var kolonne;
+            var linje;
+            var produkt;
+            var side = "";
+            var even;
             for (linje = 1; linje < 11; linje++) {
                 if (linje % 2 == 0) {
-                    even = "even"
+                    even = "even";
                 }
                 else {
-                    even = ""
+                    even = "";
                 }
                 if (linje == 1 || linje == 10) {
-                    even += " border_bottom"
+                    even += " border_bottom";
                 }
                 side = side + '<tr class="' + even + '">'; 
                 for (kolonne = 1; kolonne < 11; kolonne++) {
-                    produkt = linje * kolonne
-                    side = side + "<td>" + produkt + "</td>"
+                    produkt = linje * kolonne;
+                    side = side + "<td>" + produkt + "</td>";
                 }
-                side = side + "</tr>"
+                side = side + "</tr>";
             }
-            document.getElementById(container).innerHTML = side
+            document.getElementById(container).innerHTML = side;
         }
     </script>
 </head>
