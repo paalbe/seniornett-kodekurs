@@ -37,7 +37,7 @@
                 if (linje == 1 || linje == 10) {
                     even += " border_bottom"
                 }
-                side = side + '<tr class="' + even + '"><td>' + linje + "</td>";;
+                side = side + '<tr class="' + even + '">'; 
                 for (kolonne = 1; kolonne < 11; kolonne++) {
                     produkt = linje * kolonne
                     side = side + "<td>" + produkt + "</td>"
@@ -49,10 +49,13 @@
     </script>
 </head>
 
-<body onload="gangeTabell('tabellen');">
+<body> <!-- onload="gangeTabell('tabellen');"> -->
     <h1>Den lille gangetabellen</h1>
     <table id="tabellen" cellspacing="0">
     </table>
+    <script>
+        gangeTabell('tabellen');
+    </script>
 </body>
 
 </html>

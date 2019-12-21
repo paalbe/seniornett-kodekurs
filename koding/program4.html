@@ -46,7 +46,7 @@
             if (linje == 1 || linje == 10) {
                 even += " border_bottom";
             }
-            side = side + '<tr class="' + even + '"><td>' + linje + "</td>";;
+            side = side + '<tr class="' + even + '">'; // <td>' + linje + "</td>";
             for (kolonne = 1; kolonne < 11; kolonne++) {
                 produkt = linje * kolonne;
                 side = side + "<td>" + produkt + "</td>";
