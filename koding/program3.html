@@ -1,0 +1,27 @@
+<html>
+<!--
+Program 3.
+Vi skal lage en enkel gangetabell.
+-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html"/>
+    <meta charset="utf-8"/>
+    <title>Program 3</title>
+    <script>
+    var doc = document;
+    var produkt;
+    var kolonne;
+    var linje;
+    for ( linje = 1; linje <= 10; linje++ ) {
+        doc.writeln(linje + " x ");
+        for ( kolonne = 1; kolonne <= 10; kolonne++) {
+            produkt= linje * kolonne;
+            doc.writeln( " | " + produkt);
+        }
+        doc.writeln("<br>");
+    }
+    </script>
+</head>
+<body>
+</body>
+</html>

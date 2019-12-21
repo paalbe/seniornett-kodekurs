@@ -1,0 +1,37 @@
+<html>
+<!--
+Mitt andre program.
+Her har jeg definert noen variabler og laget en for-løkke.
+Det er også et eksempler på bruk av objekter.
+Noen objekter er "innebygget" og klare til bruk.
+  Se på console og document i programmet under.
+Andre objekter kan vi opprette og deretter bruke.
+  Se på dato i programmet under.
+-->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html"/>
+    <meta charset="utf-8"/>
+    <title>Program 2</title>
+    <script>
+      console.log("Hei verden, jeg er et nyfødt program");
+      // i er en variabel. Tenk på det som en huskelapp vi kan skrive til og lese fra.
+      var i;
+      var doc = document;
+      // for løkke. Vi vil gjøre noe mange ganger og bruker et telleverk for å styre det.
+      // for(a; b; c;) {
+      //     a) Det som står i a gjøres første gangen. 
+      //     b) Hvis det som står her er sant, utføres det som inni for-løkka. 
+      //     c) Når det som står inni for-løkka er utført, gjøres c og deretter b. 
+      // }
+      for (i = 1; i <= 10; i++ ) {
+        doc.writeln("Hei verden, jeg er et nyfødt program (" + i + ")<br>");
+      }
+
+      // Her oppretter vi et objekt og gjemmer en referanse i dato.
+      var dato = new Date();
+      doc.writeln("Dato og tid: " + dato);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

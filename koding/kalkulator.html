@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+    Dette er en enkel kalkulator som kan utføre regneoperasjoner på to tall.
+    Programmet illustrerer behandling av input og håndtering av hendelser.
+-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html"/>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/kalkulator.css">
+    <script src="js/kalkulator.js"></script>
+ </head>
+
+<body>
+    <div>
+        <h2>Enkel kalkutator</h2>
+        <table cellspacing="0">
+            <tr>
+              <th>Tall A</th><th>Operasjon</th><th>Tall B</th><th></th><th>Svar</th>
+            </tr>
+            <tr>
+                <td align="center"><input id="idtalla" type="number"></td>
+                <td align="center">
+                <button id="idpluss">+</button><br>
+                <button id="idminus">-</button><br>
+                <button id="idmult">x</button><br>
+                <button id="iddivi">:</button>
+                </td>
+                <td align="center"><input id="idtallb" type="number"></td>
+                <td align="center">=</td>
+                <td id="idsvar" align="center">??</td>                
+             </tr>   
+        </table>
+    </div>
+</body>
+
+</html>
