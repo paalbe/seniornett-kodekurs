@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>Gangetabell med funksjon</title>
+    <style>
+        td {
+            width: 25px;
+            text-align: right;
+            border-right: 1pt solid black;
+            margin: 0;
+        }
+
+        tr.even {
+            background-color: lightseagreen;
+        }
+
+        tr.border_bottom td {
+            border-bottom: 1pt solid black;
+        }
+    </style>
+    <script>
+        function gangeTabell(container) {
+            var kolonne
+            var linje
+            var produkt
+            var side = ""
+            var even
+            for (linje = 1; linje < 11; linje++) {
+                if (linje % 2 == 0) {
+                    even = "even"
+                }
+                else {
+                    even = ""
+                }
+                if (linje == 1 || linje == 10) {
+                    even += " border_bottom"
+                }
+                side = side + '<tr class="' + even + '">';
+                for (kolonne = 1; kolonne < 11; kolonne++) {
+                    produkt = linje * kolonne
+                    side = side + "<td>" + produkt + "</td>"
+                }
+                side = side + "</tr>"
+            }
+            document.getElementById(container).innerHTML = side
+        }
+    </script>
+</head>
+
+<body onload="gangeTabell('tabellen');">
+    <h1>Den lille gangetabellen</h1>
+    <table id="tabellen" cellspacing="0">
+    </table>
+</body>
+
+</html>

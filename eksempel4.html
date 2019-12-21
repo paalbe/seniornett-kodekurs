@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>Gangetabell</title>
+    <style>
+        td {
+            width: 25px;
+            text-align: right;
+            border: none;
+            margin: 0;
+        }
+
+        tr.even {
+            background-color: lightblue;
+        }
+
+        tr.border_bottom td {
+            border-bottom: 1pt solid black;
+        }
+
+        td {
+            border-right: 1pt solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Den lille gangetabellen</h1>
+    <table id="tabellen" cellspacing="0">
+    </table>
+    <script>
+        var kolonne
+        var linje
+        var produkt
+        var side = ""
+        var even
+        for (linje = 1; linje < 11; linje++) {
+            if (linje % 2 == 0) {
+                even = "even"
+            }
+            else {
+                even = ""
+            }
+            if (linje == 1 || linje == 10) {
+                even += " border_bottom"
+            }
+            side = side + '<tr class="' + even + '">';
+            for (kolonne = 1; kolonne < 11; kolonne++) {
+                produkt = linje * kolonne
+                side = side + "<td>" + produkt + "</td>"
+            }
+            side = side + "</tr>"
+        }
+        document.getElementById("tabellen").innerHTML = side
+    </script>
+</body>
+
+</html>
