@@ -1,3 +1,6 @@
+/*
+** filen program7.css
+*/
 input[type=text],
 input[type=number],
 select {
@@ -21,7 +24,7 @@ input[type=submit] {
     cursor: pointer;
 }
 
-input[type=submit]:hover {
+button:hover {
     background-color: #45a049;
 }
 

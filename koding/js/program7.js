@@ -1,3 +1,6 @@
+//
+// filen program7.js
+//
 window.addEventListener('DOMContentLoaded', function () {
     document.querySelector("#idbutton").addEventListener('click', function () {
         doForm();
