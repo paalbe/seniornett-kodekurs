@@ -2,12 +2,13 @@
 // filen program7.js
 //
 window.addEventListener('DOMContentLoaded', function () {
-    document.querySelector("#idbutton").addEventListener('click', function () {
-        doForm();
+    document.querySelector("form").addEventListener('submit', function (ev) {
+        doForm(ev);
     });
 });
 
-function doForm() {
+function doForm(ev) {
+    ev.preventDefault();
     var utskrift = document.querySelector("#idutskrift");
     var navn = document.getElementById("idnavn").value;
     var postnr = document.getElementById("idpostnr").value;

@@ -9,9 +9,11 @@
 <body>
     <div id="idform" style="margin: 0 10px; width: 200px;">
         <h2>Eksempel på input</h2>
-        <p>Når vi ønsker å sende inn data til programmet vårt, bruker vi HTML &lt;input&gt;.</p>
-        <p>Som regel står det gjerne en ledetkst foran eller over feltet der vi kan skrive.</p>
-        <!-- <form> -->
+        <p>Når vi ønsker å sende inn data til programmet vårt, 
+        bruker vi HTML &lt;input&gt;.</p>
+        <p>Som regel står det gjerne en ledetkst foran eller over 
+        feltet der vi kan skrive.</p>
+        <form>
         <label>Navn</label>
         <input type="text" id="idnavn" name="navn">
         <label for="idpostnr">Postnummer</label>
@@ -24,8 +26,8 @@
             <option value="DK">Danmark</option>
             <option value="SE">Sverige</option>
         </select>
-        <button id="idbutton">Klikk på meg</button>
-        <!-- </form> -->
+        <button id="idbutton" type="submit">Klikk på meg</button>
+        </form>
         <p id="idutskrift">
             <!-- Her skal utskriften vår komme. -->
         </p>
